@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+T Human 27 pop data
+```{r}
+library(ipADMIXTURE)
+# # running area
+h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat, admixRatioThs =0.15)
+ipADMIXTURE::plotAdmixClusters(h27pop_obj)
+ipADMIXTURE::printClustersFromLabels(h27pop_obj,human27pop_labels)
+ipADMIXTURE::plotClusterLeaves(h27pop_obj)
+```
