@@ -3,7 +3,7 @@
 \docType{data}
 \name{human27pop_labels}
 \alias{human27pop_labels}
-\title{A labels of 27 human population}
+\title{Labels of 27 human populations}
 \format{Labels of 27 human populations. :
 \describe{
    \item{human27pop_labels}{It is a vector of labels of 544 individuals. There are 27 populations.}
@@ -13,6 +13,6 @@
 human27pop_labels
 }
 \description{
-A labels of 27 human population
+Labels of 27 human populations
 }
 \keyword{datasets}

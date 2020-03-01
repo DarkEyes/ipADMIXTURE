@@ -8,8 +8,15 @@ T Human 27 pop data
 ```{r}
 library(ipADMIXTURE)
 # # running area
-h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat, admixRatioThs =0.15)
+h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
 ipADMIXTURE::plotAdmixClusters(h27pop_obj)
 ipADMIXTURE::printClustersFromLabels(h27pop_obj,human27pop_labels)
 ipADMIXTURE::plotClusterLeaves(h27pop_obj)
+out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
+plot(out$tree)
 ```
+```{r}
+devtools::document()
+
+```
+

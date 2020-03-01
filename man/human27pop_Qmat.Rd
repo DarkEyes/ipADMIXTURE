@@ -3,19 +3,19 @@
 \docType{data}
 \name{human27pop_Qmat}
 \alias{human27pop_Qmat}
-\title{A Q matrix of 27 human population}
-\format{A Q matrix of 544 individuals from 27 human populations. There are 12 ancestors in the Q matrix. :
-\describe{
-  \item{human27pop_Qmat}{ It is a Q matrix that contains admixture ratios of 544 individuals from the 27 population human dataset.
-   \code{human27pop_Qmat[i,j]} is the admixture ratio of jth ancestor for ith individual.}
+\title{A list of Q matrices of 27 human populations}
+\format{A list of Q matrices of 544 individuals from 27 human populations. There are 2-12 ancestors in the list.
+  \describe{
+  \item{human27pop_Qmat}{ It is list of Q matrices that contains admixture ratios of 544 individuals from the 27 population human dataset.
+   \code{human27pop_Qmat[[k]][i,j]} is the admixture ratio of jth ancestor for ith individual in the (k+1)-ancestor Q matrix.}
   ...
 }}
 \usage{
 human27pop_Qmat
 }
 \description{
-A dataset containing admixture ratios of 544 individuals from 27 human populations where the number of ancestors is 12.
+A dataset containing admixture ratios of 544 individuals from 27 human populations where the number of ancestors ranges from 2 to 12.
 This dataset was the result of running ADMIXTURE software developed by Zhou, H., et al. (2011). A quasi-Newton acceleration for high-dimensional optimization algorithms. Statistics and computing, 21(2), 261-273.
-on the 27 human population dataset published by Xing, J., Watkins, W. S. et al. (2009). Fine-scaled human genetic structure revealed by SNP microarrays. Genome research, 19(5), 815-825.
+on the 27-human-population dataset published by Xing, J., Watkins, W. S. et al. (2009). Fine-scaled human genetic structure revealed by SNP microarrays. Genome research, 19(5), 815-825.
 }
 \keyword{datasets}
