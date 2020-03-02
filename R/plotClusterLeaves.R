@@ -1,3 +1,16 @@
+#' plotClusterLeaves
+#'
+#' plotClusterLeaves is function that plots clusters in a form of treemap plot.
+#' Subsquares represent clusters. Each subquare contains cluster label (ID),
+#' number of members (N), and a maximum of manitude-difference of admixture ratios (md).
+#' A size of each subsquare represents a ratio of memeber numbers compared to other clusters.
+#' A color represents an md value of cluster.
+#'
+#'@param obj is an object of ipADMIXTURE class.
+#'
+#'@examples
+#' h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
+#' ipADMIXTURE::plotClusterLeaves(h27pop_obj)
 #'
 #'@importFrom treemap treemap
 #'@export

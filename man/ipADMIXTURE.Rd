@@ -4,21 +4,30 @@
 \alias{ipADMIXTURE}
 \title{ipADMIXTURE function}
 \usage{
-ipADMIXTURE(Qmat, admixRatioThs)
+ipADMIXTURE(Qmat, admixRatioThs, method = "average")
 }
 \arguments{
 \item{Qmat}{is a Q matrix that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
 
-\item{admixRatioThs}{is a threshold to determine that if a cluster has \code{meanDiffAdmixRatio} lower than threshold, then the cluster is a homogeneous cluster.}
+\item{admixRatioThs}{is a threshold to determine that if a cluster has \code{maxDiffAdmixRatio} lower than threshold, then the cluster is a homogeneous cluster.}
+
+\item{method}{is a method parameter of \code{hclust} object for hierarchical clustering analysis. The default is "average".}
 }
 \value{
-This function returns sth
+This function returns clustering results in a form of an object of ipADMIXTURE class.
+The object contains the following items.
+
+\item{indexClsVec}{is a vector of clustering assignement where \code{indexClsVec[i]} is a cluster number of individual i.}
+\item{homoClusters}{is a list of cluster obejects where each object contains member indices, cluster's \code{maxDiffAdmixRatio}, ID, etc. }
+\item{maxDiffAdmixRatioVec}{is a vector of \code{maxDiffAdmixRatio}s for all clusters.}
+\item{Qmat}{is a Q matrix that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
+\item{admixRatioThs}{is a threshold to determine that if a cluster has \code{maxDiffAdmixRatio} lower than threshold, then the cluster is a homogeneous cluster.}
 }
 \description{
 ipADMIXTURE is a main function
 }
 \examples{
 # Running ipADMIXTURE on Q matrix of 27 human population dataset where K = 12
-h27pop_obj<-ipADMIXTURE(Qmat=human27pop_Qmat, admixRatioThs =0.15)
+h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
 
 }

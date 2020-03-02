@@ -1,6 +1,14 @@
+#' printClustersFromLabels
 #'
+#' printClustersFromLabels is function that reports that clustering results in text mode.
+#'@param obj is an object of ipADMIXTURE class.
+#'@param labels is a vector of labels of all individuals.
 #'
-#' @export
+#'@examples
+#' h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
+#' ipADMIXTURE::printClustersFromLabels(h27pop_obj,ipADMIXTURE::human27pop_labels)
+#'
+#'@export
 #'
 printClustersFromLabels<-function(obj,labels)
 {

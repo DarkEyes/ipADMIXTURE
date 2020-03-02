@@ -1,0 +1,39 @@
+---
+title: "ipADMIXTURE_demo"
+author: " C. Amornbunchornvej"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ipADMIXTURE_demo} 
+  %\VignetteEngine{knitr::knitr}
+  \usepackage[utf8]{inputenc}
+---
+
+Real-world dataset: Human 27 population data
+
+Step1: running the  ipADMIXTURE using Human 27 population dataset where the number of ancestors K =12. 
+```{r}
+library(ipADMIXTURE)
+# # running area: ipADMIXTURE::human27pop_Qmat[[i]] is a Q matrix with K=i+1
+h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
+```
+
+Step2: printing all cluster information in text mode.
+```{r}
+ipADMIXTURE::printClustersFromLabels(h27pop_obj,human27pop_labels)
+```
+
+Step3: plotting admixture ratios and clustering assignment.
+```{r}
+ipADMIXTURE::plotAdmixClusters(h27pop_obj)
+```
+
+Step4: plotting clustering information in treemap plot
+```{r}
+ipADMIXTURE::plotClusterLeaves(h27pop_obj)
+```
+Step4: Inferring phylogenetic tree of  clusters based on a list of Q matrices that varies K.
+```{r}
+out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
+plot(out$tree)
+```
