@@ -10,7 +10,9 @@ Authors@R:
 Description: A data clustering package based on admixture ratios (Q matrix) of population structure. The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAP frameworks. The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varrying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number K* that makes majority of members of two clusters are in the different clusters. This K* reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K* clusters based on maximum admixture ratio of individuals. 
 Depends: R (>= 3.5.0)
 Imports: stats,treemap,RColorBrewer,ape
-biocViews:
+URL: https://github.com/DarkEyes/ipADMIXTURE
+BugReports: https://github.com/DarkEyes/ipADMIXTURE/issues
+Language: en-US
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

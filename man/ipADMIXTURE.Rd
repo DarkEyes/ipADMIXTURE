@@ -2,7 +2,7 @@
 % Please edit documentation in R/ipADMIXTURE.R
 \name{ipADMIXTURE}
 \alias{ipADMIXTURE}
-\title{ipADMIXTURE function}
+\title{Iterative Prunning Population Admixture Inference Framework (ipADMIXTURE)}
 \usage{
 ipADMIXTURE(Qmat, admixRatioThs, method = "average")
 }
@@ -24,10 +24,18 @@ The object contains the following items.
 \item{admixRatioThs}{is a threshold to determine that if a cluster has \code{maxDiffAdmixRatio} lower than threshold, then the cluster is a homogeneous cluster.}
 }
 \description{
-ipADMIXTURE is a main function
+A data clustering package based on admixture ratios (Q matrix) of population structure.
+
+The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAP frameworks.
+The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varrying a number of ancestors (K),
+the framework define a similar value between clusters i,j as a minimum number K that makes majority of members of two clusters are in the different clusters.
+This K reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K clusters based on maximum admixture ratio of individuals.
 }
 \examples{
 # Running ipADMIXTURE on Q matrix of 27 human population dataset where K = 12
 h27pop_obj<-ipADMIXTURE(Qmat=ipADMIXTURE::human27pop_Qmat[[11]], admixRatioThs =0.15)
 
+}
+\author{
+Chainarong Amornbunchornvej, \email{chai@ieee.org}
 }
