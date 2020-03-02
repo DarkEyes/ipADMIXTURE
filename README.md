@@ -42,7 +42,7 @@ ipADMIXTURE::printClustersFromLabels(h27pop_obj,human27pop_labels)
 ```
 
 Then, the text looks like this
-```
+```{r}
 [1] "Overall labels"
 [1] "==============="
 [1] "Alur(10)Hema(15)Pygmy(25)Brahmin(25)Utah_N._European(25)Cambodian(5)Chinese(10)Tamil_LC(13)Irula(24)JPN2(13)Madiga(10)Mala(11)CEU(60)YRI(60)CHB(45)JPT(45)Luhya(24)Tuscan(25)Kung(13)Pedi(10)Sotho/Tswana(8)Stalskoe(5)Iban(25)TBrahmin(14)Urkarah(18)VN(7)Nguni(9)"
@@ -123,21 +123,28 @@ This is a cluster ID19 that has a maximum of manitude-difference of admixture ra
 
 
 Step3: plotting admixture ratios and clustering assignment.
+
 ```{r}
 ipADMIXTURE::plotAdmixClusters(h27pop_obj)
 ```
 <img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/admix.png" width="550">
+
 Step4: plotting clustering information in treemap plot
+
 ```{r}
 ipADMIXTURE::plotClusterLeaves(h27pop_obj)
 ```
 <img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/treemap.png" width="550">
-Step4: Inferring phylogenetic tree of  clusters based on a list of Q matrices that varies K.
+
+Step5: Inferring phylogenetic tree of clusters based on a list of Q matrices that varies K using neighbor-joining (NJ) method. 
+
 ```{r}
 out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
 plot(out$tree)
 ```
 <img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/nj.png" width="550">
+
+The leave nodes are cluster IDs. 
 
 Creating Q matrix from .geno file using R
 ---------------------------------------------------
