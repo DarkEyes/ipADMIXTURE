@@ -139,6 +139,25 @@ plot(out$tree)
 ```
 <img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/nj.png" width="550">
 
+Creating Q matrix from .geno file using R
+---------------------------------------------------
+There are two well-known software to get Q matrix: <a href="http://software.genetics.ucla.edu/admixture/">ADMIXTURE</a>  and <a href="https://web.stanford.edu/group/pritchardlab/structure.html">STRCUTURE</a>. However, if you want to have everything in R, then here's the solution.
+
+We can use <a href="https://www.bioconductor.org/packages/release/bioc/html/LEA.html">LEA package</a> to convert .geno file into Q matrix. If you never install bioconductor, then you should run the following code.
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+```
+You can install LEA package by the BiocManager below.
+```{r}
+BiocManager::install("LEA")
+```
+Suppose we have "yourfile.geno" and we want to get the Q matrix with 4 ancestors, then we can run the following code.
+```{r}
+library(LEA)
+obj.snmf = LEA::snmf(input.file="yourfile.geno", K = 4, project = project, iterations= iterations)
+ Qmat = LEA::Q(obj.snmf, K = K)
+```
 
 Citation
 ----------------------------------------------------------------------------------
