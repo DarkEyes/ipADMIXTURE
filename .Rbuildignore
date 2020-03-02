@@ -1,2 +1,8 @@
 ^ipADMIXTURE\.Rproj$
 ^\.Rproj\.user$
+^cran-comments\.md$
+^\.travis\.yml$
+^doc$
+^Meta$
+^LICENSE$
+^man\FIG$
