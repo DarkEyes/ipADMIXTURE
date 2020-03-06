@@ -26,7 +26,7 @@ This requires a user to install the "remotes" package before installing mFLICA.
 EXAMPLE
 ----------------------------------------------------------------------------------
 
-In this example, we have data set of human 27 population data publised by Zhou, H., et al. (2011). The dataset consists of 544 individuals from 27 populations. The Q matrices from this data are is provided in this package. The following steps are the simple way to use our package.
+In this example, we have data set of human 27 population data publised by Xing, J., et al. (2009). The dataset consists of 544 individuals from 27 populations. The Q matrices from this data are is provided in this package. The following steps are the simple way to use our package.
 
 
 Step1: running the  ipADMIXTURE using Human 27 population dataset where the number of ancestors K =12. 
