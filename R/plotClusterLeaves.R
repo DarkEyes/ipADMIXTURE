@@ -43,7 +43,7 @@ plotClusterLeaves<-function(obj)
     treemap::treemap(treedat,
             index=c("strCLS"),
             vSize="popSize",
-            vColor="maxDifferenceAdmixtureRatio",title.legend ="|Maximal-admixture-ratio differences| (md)",
+            vColor="maxDifferenceAdmixtureRatio",title.legend ="|Maximum of magnitude-difference of admixture ratios| (md)",
             type="value",overlap.labels = 1, title = "Homogeneous clusters" )
 }
 labelCount<-function(labels)
