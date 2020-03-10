@@ -6,7 +6,7 @@ ipADMIXTURE: Iterative Prunning Population Admixture Inference Framework
 
  A data clustering package based on admixture ratios (Q matrix) of population structure.
  
- The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAP frameworks. 
+ The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAPS frameworks. 
  
 The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. 
 
