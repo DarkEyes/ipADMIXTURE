@@ -34,6 +34,6 @@ ipADMIXTURE::plotClusterLeaves(h27pop_obj)
 ```
 Step4: Inferring phylogenetic tree of  clusters based on a list of Q matrices that varies K.
 ```{r}
-out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
-plot(out$tree)
+#out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
+plot(out$tree, type = "unrooted")
 ```

@@ -28,7 +28,7 @@ getPhyloTree<-function(QmatList,indexClsVec)
 
   N<-dim(QmatList[[2]])[1]
   K<-length(QmatList)
-  minDiffAncestorMat<-matrix(C,N,N)
+  minDiffAncestorMat<-matrix(K,N,N)
   for(k in seq(2,K))
   {
     clusters <- apply( QmatList[[k]], 1, which.max)
