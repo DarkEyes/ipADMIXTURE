@@ -43,7 +43,7 @@ getPhyloTree<-function(QmatList,indexClsVec)
       }
   }
 
-  minDiffAncestorClsMat<-matrix(2,C,C)
+  minDiffAncestorClsMat<-matrix(C,C,C)
   for( cl1 in seq(1,C-1 ) )
   {
     for( cl2 in seq(cl1+1, C) )
