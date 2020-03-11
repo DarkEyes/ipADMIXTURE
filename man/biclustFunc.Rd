@@ -18,7 +18,7 @@ This function returns binary clustering results.
 
 \item{heteroFlag}{ is a flag that represents a stutus whether a given cluster is heterogeneous (having su-clusters). It is TRUE if \code{maxDiffAdmixRatio >= admixRatioThs}.}
 \item{clusterInx}{is a vector of clustering assignement where \code{indexClsVec[i]} is a cluster number of individual i.}
-\item{meanDiffAdmixRatio}{is a vector of manitude-difference of admixture ratios.
+\item{meanDiffAdmixRatio}{is a vector of magnitude-difference of admixture ratios.
 It is calculated by splitting a given cluster into two sub-clusters. Then, we take the absolute on the difference between mean admixture ratios of sub-clusters. }
 \item{Qmat1}{is a Q matrix of sub-cluster #1 after splitting a given cluster into two sub-clusters that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
 \item{Qmat2}{is a Q matrix of sub-cluster #2 after splitting a given cluster into two sub-clusters that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
