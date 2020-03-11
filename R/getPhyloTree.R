@@ -43,7 +43,7 @@ getPhyloTree<-function(QmatList,indexClsVec)
       }
   }
 
-  minDiffAncestorClsMat<-matrix(C,C,C)
+  minDiffAncestorClsMat<-matrix(K,C,C)
   for( cl1 in seq(1,C-1 ) )
   {
     for( cl2 in seq(cl1+1, C) )
@@ -53,7 +53,7 @@ getPhyloTree<-function(QmatList,indexClsVec)
       minDiffAncestorClsMat[cl2,cl1] <- median(currMat, na.rm = TRUE)
     }
   }
-  distMat<-C-minDiffAncestorClsMat+1
+  distMat<-max(c(C,minDiffAncestorClsMat))-minDiffAncestorClsMat+1
   tree<-nj(distMat)
   return(list(minDiffAncestorClsMat=minDiffAncestorClsMat,tree=tree))
 }
