@@ -140,9 +140,9 @@ Step5: Inferring phylogenetic tree of clusters based on a list of Q matrices tha
 
 ```{r}
 out<-ipADMIXTURE::getPhyloTree(human27pop_Qmat,h27pop_obj$indexClsVec)
-plot(out$tree)
+plot(out$tree,type = "unrooted")
 ```
-<img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/nj.png" width="550">
+<img src="https://github.com/DarkEyes/ipADMIXTURE/blob/master/man/FIG/nj.png" width="400">
 
 The leave nodes are cluster IDs. 
 
