@@ -1,5 +1,5 @@
 Package: ipADMIXTURE
-Title: Iterative Prunning Population Admixture Inference Framework (ipADMIXTURE)
+Title: Iterative Prunning Population Admixture Inference Framework
 Version: 0.1.0
 Authors@R: 
     person(given = "Chainarong",
