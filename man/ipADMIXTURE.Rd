@@ -2,7 +2,7 @@
 % Please edit documentation in R/ipADMIXTURE.R
 \name{ipADMIXTURE}
 \alias{ipADMIXTURE}
-\title{Iterative Prunning Population Admixture Inference Framework (ipADMIXTURE)}
+\title{Iterative Pruning Population Admixture Inference Framework (ipADMIXTURE)}
 \usage{
 ipADMIXTURE(Qmat, admixRatioThs, method = "average")
 }
@@ -17,8 +17,8 @@ ipADMIXTURE(Qmat, admixRatioThs, method = "average")
 This function returns clustering results in a form of an object of ipADMIXTURE class.
 The object contains the following items.
 
-\item{indexClsVec}{is a vector of clustering assignement where \code{indexClsVec[i]} is a cluster number of individual i.}
-\item{homoClusters}{is a list of cluster obejects where each object contains member indices, cluster's \code{maxDiffAdmixRatio}, ID, etc. }
+\item{indexClsVec}{is a vector of clustering assignment where \code{indexClsVec[i]} is a cluster number of individual i.}
+\item{homoClusters}{is a list of cluster objects where each object contains member indices, cluster's \code{maxDiffAdmixRatio}, ID, etc. }
 \item{maxDiffAdmixRatioVec}{is a vector of \code{maxDiffAdmixRatio}s for all clusters.}
 \item{Qmat}{is a Q matrix that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
 \item{admixRatioThs}{is a threshold to determine that if a cluster has \code{maxDiffAdmixRatio} lower than threshold, then the cluster is a homogeneous cluster.}
@@ -26,8 +26,8 @@ The object contains the following items.
 \description{
 A data clustering package based on admixture ratios (Q matrix) of population structure.
 
-The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAP frameworks.
-The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varrying a number of ancestors (K),
+The framework is based on iterative Pruning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAPS frameworks.
+The package also provides a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varying a number of ancestors (K),
 the framework define a similar value between clusters i,j as a minimum number K that makes majority of members of two clusters are in the different clusters.
 This K reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K clusters based on maximum admixture ratio of individuals.
 }

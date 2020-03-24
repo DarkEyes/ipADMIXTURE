@@ -1,4 +1,4 @@
-ipADMIXTURE: Iterative Prunning Population Admixture Inference Framework
+ipADMIXTURE: Iterative Pruning Population Admixture Inference Framework
 ==========================================================
 [![Travis CI build status](https://travis-ci.com/DarkEyes/ipADMIXTURE.svg?branch=master)](https://travis-ci.com/DarkEyes/ipADMIXTURE/)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
@@ -6,11 +6,11 @@ ipADMIXTURE: Iterative Prunning Population Admixture Inference Framework
 
  A data clustering package based on admixture ratios (Q matrix) of population structure.
  
- The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAPS frameworks. 
+ The framework is based on iterative Pruning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAPS frameworks. 
  
-The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. 
+The package also provides a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. 
 
-By given multiple Q matrices with varrying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number K* that makes majority of members of two clusters are in the different clusters. This K* reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K* clusters based on maximum admixture ratio of individuals.
+By given multiple Q matrices with varying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number K* that makes majority of members of two clusters are in the different clusters. This K* reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K* clusters based on maximum admixture ratio of individuals.
  
 
 Installation
@@ -21,12 +21,12 @@ For the newest version on github, please call the following command in R termina
 ``` r
 remotes::install_github("DarkEyes/ipADMIXTURE")
 ```
-This requires a user to install the "remotes" package before installing mFLICA.
+This requires a user to install the "remotes" package before installing ipADMIXTURE.
 
 EXAMPLE
 ----------------------------------------------------------------------------------
 
-In this example, we have data set of human 27 population data publised by Xing, J., et al. (2009). The dataset consists of 544 individuals from 27 populations. The Q matrices from this data are provided in this package. The following steps are the simple way to use our package.
+In this example, we have data set of human 27 population data published by Xing, J., et al. (2009). The dataset consists of 544 individuals from 27 populations. The Q matrices from this data are provided in this package. The following steps are the simple way to use our package.
 
 
 Step1: running the  ipADMIXTURE using Human 27 population dataset where the number of ancestors K =12. 
@@ -113,13 +113,13 @@ Then, the text looks like this
 [1] "ID22, md0.12, N23"
 [1] "Alur(10/10)Hema(13/15)"
 ```
-For any cluster, it is separated from other cluster by "===============". The first line of cluster details is "IDx, md0.xx, Nx" and the second line is a detail of populations from the groundtruth. 
+For any cluster, it is separated from other cluster by "===============". The first line of cluster details is "IDx, md0.xx, Nx" and the second line is a detail of populations from the ground truth. 
 
 For example,
 [1] "ID19, md0.00, N4"
 [1] "Hema(2/15)Luhya(2/24)".
 
-This is a cluster ID19 that has a maximum of manitude-difference of admixture ratios (md) as 0.00 and there are 4 inividuals in this clusater. For a second line, there are 2 individuals from Hema population where the total number of Hema members is 15. There are also 2 individuals out of 24 from Luhya population.
+This is a cluster ID19 that has a maximum of manitude-difference of admixture ratios (md) as 0.00 and there are 4 individuals in this cluster. For a second line, there are 2 individuals from Hema population where the total number of Hema members is 15. There are also 2 individuals out of 24 from Luhya population.
 
 
 Step3: plotting admixture ratios and clustering assignment.

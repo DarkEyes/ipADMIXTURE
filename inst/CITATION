@@ -1,0 +1,12 @@
+citHeader("To cite the 'ipADMIXTURE' package in publications use:")
+
+citEntry(entry       = "Misc",
+         title       = "ipADMIXTURE: R package for inferring sub-population clusters based on genetic admixture",
+         author      = personList(as.person("Chainarong Amornbunchornvej"),
+                        as.person("Pongsakorn Wangkumhang"),
+                        as.person("Sissades Tongsima")
+                        ),
+         year        = "2020",
+         url         = "https://doi.org/10.1101/2020.03.21.001206",
+         textVersion = "Chainarong Amornbunchornvej, Pongsakorn Wangkumhang, and Sissades Tongsima (2020). ipADMIXTURE: R package for inferring sub-population clusters based on genetic admixture. bioRxiv 2020.03.21.001206. doi:https://doi.org/10.1101/2020.03.21.001206."
+         )

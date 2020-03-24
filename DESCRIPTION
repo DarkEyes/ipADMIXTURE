@@ -1,5 +1,5 @@
 Package: ipADMIXTURE
-Title: Iterative Prunning Population Admixture Inference Framework
+Title: Iterative Pruning Population Admixture Inference Framework
 Version: 0.1.0
 Authors@R: 
     person(given = "Chainarong",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "grandca@gmail.com",
            comment = c(ORCID = "0000-0003-3131-0370"))
-Description: A data clustering package based on admixture ratios (Q matrix) of population structure. The framework is based on iterative prunning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAP frameworks. The package also provindes a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varrying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number K* that makes majority of members of two clusters are in the different clusters. This K* reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K* clusters based on maximum admixture ratio of individuals. 
+Description: A data clustering package based on admixture ratios (Q matrix) of population structure. The framework is based on iterative Pruning procedure that performs data clustering by splitting a given population into subclusters until meeting the condition of stopping criteria the same as ipPCA, iNJclust, and IPCAPS frameworks. The package also provides a function to retrieve phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters. By given multiple Q matrices with varying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number K* that makes majority of members of two clusters are in the different clusters. This K* reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign K* clusters based on maximum admixture ratio of individuals. The publication of this package is at Chainarong Amornbunchornvej, Pongsakorn Wangkumhang, and Sissades Tongsima (2020) <doi:10.1101/2020.03.21.001206>.
 Depends: R (>= 3.5.0)
 Imports: stats,treemap,ape
 URL: https://github.com/DarkEyes/ipADMIXTURE

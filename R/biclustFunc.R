@@ -7,13 +7,13 @@
 #'
 #' @return This function returns binary clustering results.
 #'
-#' \item{heteroFlag}{ is a flag that represents a stutus whether a given cluster is heterogeneous (having su-clusters). It is TRUE if \code{maxDiffAdmixRatio >= admixRatioThs}.}
-#' \item{clusterInx}{is a vector of clustering assignement where \code{indexClsVec[i]} is a cluster number of individual i.}
+#' \item{heteroFlag}{ is a flag that represents a status whether a given cluster is heterogeneous (having sub-clusters). It is TRUE if \code{maxDiffAdmixRatio >= admixRatioThs}.}
+#' \item{clusterInx}{is a vector of clustering assignment where \code{indexClsVec[i]} is a cluster number of individual i.}
 #' \item{meanDiffAdmixRatio}{is a vector of magnitude-difference of admixture ratios.
 #' It is calculated by splitting a given cluster into two sub-clusters. Then, we take the absolute on the difference between mean admixture ratios of sub-clusters. }
 #' \item{Qmat1}{is a Q matrix of sub-cluster #1 after splitting a given cluster into two sub-clusters that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
 #' \item{Qmat2}{is a Q matrix of sub-cluster #2 after splitting a given cluster into two sub-clusters that contains admixture ratios of all individuals where the \code{Qmat[i,j]} represents the admixture ratio of ancestor j for individual i.}
-#' \item{maxDiffAdmixRatio}{is a maximum of manitude-difference of admixture ratios for a given cluster before splitting into two sub-clusters. }
+#' \item{maxDiffAdmixRatio}{is a maximum of magnitude-difference of admixture ratios for a given cluster before splitting into two sub-clusters. }
 #'
 #'@examples
 #'# Running biclustFunc on Q matrix of 27 human population dataset where K = 12
