@@ -11,6 +11,4 @@ New submission.
 
 This is because this package is the new submission on CRAN.
 
-## R-hub builder 
-There were no ERRORs or WARNINGs
 
