@@ -171,8 +171,7 @@ obj.snmf = LEA::snmf(input.file="yourfile.geno", K = 4, project = project, itera
 
 Citation
 ----------------------------------------------------------------------------------
-- ipADMIXTURE: R package for inferring sub-population clusters based on genetic admixture
-Chainarong Amornbunchornvej, Pongsakorn Wangkumhang, Sissades Tongsima
+- Chainarong Amornbunchornvej, Pongsakorn Wangkumhang, and Sissades Tongsima (2020). ipADMIXTURE: R package for inferring sub-population clusters based on genetic admixture.
 bioRxiv 2020.03.21.001206; doi: https://doi.org/10.1101/2020.03.21.001206
 
 Contact
