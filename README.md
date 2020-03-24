@@ -4,7 +4,7 @@ ipADMIXTURE: Iterative Pruning Population Admixture Inference Framework
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-last-release/ipADMIXTURE)](https://cran.r-project.org/package=ipADMIXTURE)
 [![Download](https://cranlogs.r-pkg.org/badges/grand-total/ipADMIXTURE)](https://cran.r-project.org/package=ipADMIXTURE)
-[![bioRxiv](https://img.shields.io/badge/bioRxiv-2020.03.21.001206-B31B1B)](https://doi.org/10.1101/2020.03.21.001206/)
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-2020.03.21.001206-B31B1B)](https://doi.org/10.1101/2020.03.21.001206)
 [![License](https://img.shields.io/badge/License-GPL%203-orange.svg)](https://spdx.org/licenses/GPL-3.0-only.html)
 
  A data clustering package based on admixture ratios (Q matrix) of population structure.
