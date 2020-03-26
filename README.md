@@ -18,6 +18,11 @@ By given multiple Q matrices with varying a number of ancestors (K), the framewo
 
 Installation
 ------------
+You can install our package from CRAN.
+
+```r
+install.packages("ipADMIXTURE")
+```
 
 For the newest version on github, please call the following command in R terminal.
 
