@@ -156,7 +156,7 @@ The leave nodes are cluster IDs.
 
 Creating Q matrix from .geno file using R
 ---------------------------------------------------
-There are two well-known software products to get Q matrix: <a href="http://software.genetics.ucla.edu/admixture/">ADMIXTURE</a>  and <a href="https://web.stanford.edu/group/pritchardlab/structure.html">STRUCTURE</a>. However, if you want to have everything in R, then here's the solution.
+There are two well-known software products for getting Q matrix: <a href="http://software.genetics.ucla.edu/admixture/">ADMIXTURE</a>  and <a href="https://web.stanford.edu/group/pritchardlab/structure.html">STRUCTURE</a>. However, if you want to have everything in R, then here's the solution.
 
 We can use <a href="https://www.bioconductor.org/packages/release/bioc/html/LEA.html">LEA package</a> to convert .geno file into Q matrix. If you never install bioconductor, then you should run the following code.
 ```{r}
