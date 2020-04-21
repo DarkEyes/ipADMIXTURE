@@ -2,7 +2,7 @@
 #'
 #' getPhyloTree is function that reports a phylogenetic tree of clusters based on admixture analysis.
 #' The phylogeny tree that construct a neighbor-joining tree based on a similar matrix between clusters.
-#' By given multiple Q matrices with varying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number \code{K} that makes majority of members of two clusters are in the different clusters.
+#' By given multiple Q matrices with varying a number of ancestors (K), the framework define a similar value between clusters i,j as a minimum number \code{K} that makes majority of members of two clusters are in the different ancestor groups.
 #' This \code{K} reflexes a minimum number of ancestors we need to splitting cluster i,j into different clusters if we assign \code{K} clusters based on maximum admixture ratio of individuals.
 #'@param QmatList is list of Q matrix where \code{QmatList[[k]]} is a Q matrix with \code{k+1} ancestors.
 #'@param indexClsVec is a vector of clustering assignment where \code{indexClsVec[i]} is a cluster number of individual i.
@@ -10,7 +10,8 @@
 #'@return This function returns an object of nj tree as well as a matrix \code{minDiffAncestorClsMat} that is used as a similarity matrix.
 #'
 #' \item{tree}{is an object of nj tree calculated by ape::nj() function on a dissimilarity version of \code{minDiffAncestorClsMat}. }
-#' \item{minDiffAncestorClsMat}{is a minimum-ancestor-number matrix where \code{minDiffAncestorClsMat[i,j]} is a minimum number of ancestors that make i and j to be different clusters while \code{minDiffAncestorClsMat[i,j]-1} makes majority of members from i and j belong to the same cluster.}
+#' \item{minDiffAncestorClsMat}{is a minimum-ancestor-number matrix in the group level where \code{minDiffAncestorClsMat[i,j]} is a minimum number of ancestors that make i and j to be different ancestor groups while \code{minDiffAncestorClsMat[i,j]-1} makes majority of members from i and j belong to the same ancestor group.}
+#' \item{minDiffAncestorMat}{is a minimum-ancestor-number matrix in the individual level where \code{minDiffAncestorMat[i,j]} is a minimum number of ancestors that make i and j to be different ancestor groups}
 #'
 #'@examples
 #'# Running ipADMIXTURE on Q matrices (K=2-12) of 27 human population dataset.
@@ -55,5 +56,5 @@ getPhyloTree<-function(QmatList,indexClsVec)
   }
   distMat<-max(c(C,minDiffAncestorClsMat))-minDiffAncestorClsMat+1
   tree<-nj(distMat)
-  return(list(minDiffAncestorClsMat=minDiffAncestorClsMat,tree=tree))
+  return(list(minDiffAncestorClsMat=minDiffAncestorClsMat,minDiffAncestorMat=minDiffAncestorMat,tree=tree))
 }
