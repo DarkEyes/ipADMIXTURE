@@ -170,8 +170,9 @@ BiocManager::install("LEA")
 Suppose we have "yourfile.geno" and we want to get the Q matrix with 4 ancestors, then we can run the following code.
 ```{r}
 library(LEA)
-obj.snmf = LEA::snmf(input.file="yourfile.geno", K = 4, project = project, iterations= iterations)
- Qmat = LEA::Q(obj.snmf, K = K)
+K=4
+obj.snmf = LEA::snmf(input.file="secondary_contact.geno", K = K, project = "new")
+Qmat = LEA::Q(obj.snmf, K = K)
 ```
 
 Citation
