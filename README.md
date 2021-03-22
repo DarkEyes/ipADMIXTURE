@@ -171,7 +171,7 @@ Suppose we have "yourfile.geno" and we want to get the Q matrix with 4 ancestors
 ```{r}
 library(LEA)
 K=4
-obj.snmf = LEA::snmf(input.file="secondary_contact.geno", K = K, project = "new")
+obj.snmf = LEA::snmf(input.file="yourfile.geno", K = K, project = "new")
 Qmat = LEA::Q(obj.snmf, K = K)
 ```
 
