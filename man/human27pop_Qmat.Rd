@@ -4,12 +4,14 @@
 \name{human27pop_Qmat}
 \alias{human27pop_Qmat}
 \title{A list of Q matrices of 27 human populations}
-\format{A list of Q matrices of 544 individuals from 27 human populations. There are 2-12 ancestors in the list.
+\format{
+A list of Q matrices of 544 individuals from 27 human populations. There are 2-12 ancestors in the list.
   \describe{
   \item{human27pop_Qmat}{ It is list of Q matrices that contains admixture ratios of 544 individuals from the 27 population human dataset.
    \code{human27pop_Qmat[[k]][i,j]} is the admixture ratio of jth ancestor for ith individual in the (k+1)-ancestor Q matrix.}
   ...
-}}
+}
+}
 \usage{
 human27pop_Qmat
 }

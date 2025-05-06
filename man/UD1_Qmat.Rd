@@ -4,12 +4,14 @@
 \name{UD1_Qmat}
 \alias{UD1_Qmat}
 \title{A list of Q matrices of simulation of 20 populations}
-\format{A list of Q matrices of 1200 individuals from 20 populations. There are Q matrices that have the number of ancestors ranges from from 2 to 18.
+\format{
+A list of Q matrices of 1200 individuals from 20 populations. There are Q matrices that have the number of ancestors ranges from from 2 to 18.
   \describe{
   \item{UD1_Qmat}{ It is list of Q matrices that contains admixture ratios of 1200 individuals from the 20-population dataset.
    \code{UD1_Qmat[[k]][i,j]} is the admixture ratio of jth ancestor for ith individual in the (k+1)-ancestor Q matrix.}
   ...
-}}
+}
+}
 \usage{
 UD1_Qmat
 }

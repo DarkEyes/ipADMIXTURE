@@ -1,6 +1,5 @@
 ipADMIXTURE: Iterative Pruning Population Admixture Inference Framework
 ==========================================================
-[![Travis CI build status](https://travis-ci.com/DarkEyes/ipADMIXTURE.svg?branch=master)](https://travis-ci.com/DarkEyes/ipADMIXTURE/)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-last-release/ipADMIXTURE)](https://cran.r-project.org/package=ipADMIXTURE)
 [![Download](https://cranlogs.r-pkg.org/badges/grand-total/ipADMIXTURE)](https://cran.r-project.org/package=ipADMIXTURE)
@@ -156,7 +155,7 @@ The leave nodes are cluster IDs.
 
 Creating Q matrix from .geno file using R
 ---------------------------------------------------
-There are two well-known software products for getting Q matrix: <a href="http://software.genetics.ucla.edu/admixture/">ADMIXTURE</a>  and <a href="https://web.stanford.edu/group/pritchardlab/structure.html">STRUCTURE</a>. However, if you want to have everything in R, then here's the solution.
+There are two well-known software products for getting Q matrix: <a href="https://dalexander.github.io/admixture/index.html">ADMIXTURE</a>  and <a href="https://web.stanford.edu/group/pritchardlab/structure.html">STRUCTURE</a>. However, if you want to have everything in R, then here's the solution.
 
 We can use <a href="https://www.bioconductor.org/packages/release/bioc/html/LEA.html">LEA package</a> to convert .geno file into Q matrix. If you never install bioconductor, then you should run the following code.
 ```{r}
@@ -183,5 +182,5 @@ bioRxiv 2020.03.21.001206; doi: https://doi.org/10.1101/2020.03.21.001206
 Contact
 ----------------------------------------------------------------------------------
 - Developer: C. Amornbunchornvej<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-3131-0370" href="https://orcid.org/0000-0003-3131-0370" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0003-3131-0370</a></div>
-- <a href="https://www.nectec.or.th/en/research/dsaru/dsarg-sai.html">Strategic Analytics Networks with Machine Learning and AI (SAI)</a>, <a href="https://www.nectec.or.th/en/">NECTEC</a>, Thailand
+- <a href="https://www.nectec.or.th/en/research/dsarg/dsarg-sai.html">Strategic Analytics Networks with Machine Learning and AI (SAI)</a>, <a href="https://www.nectec.or.th/en/">NECTEC</a>, Thailand
 - Homepage: <a href="https://sites.google.com/view/amornbunchornvej/home">Link</a>

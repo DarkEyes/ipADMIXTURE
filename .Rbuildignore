@@ -5,4 +5,5 @@
 ^doc$
 ^Meta$
 ^LICENSE$
-^man\FIG$
+^man/FIG$
+

@@ -4,11 +4,13 @@
 \name{UD1labels}
 \alias{UD1labels}
 \title{Labels of 20 simulation populations}
-\format{Labels of 20 populations. :
+\format{
+Labels of 20 populations. :
 \describe{
    \item{UD1labels}{It is a vector of labels of 1200 individuals. There are 20 populations.}
   ...
-}}
+}
+}
 \usage{
 UD1labels
 }
