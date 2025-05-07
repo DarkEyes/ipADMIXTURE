@@ -1,6 +1,6 @@
 Package: ipADMIXTURE
 Title: Iterative Pruning Population Admixture Inference Framework
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Chainarong",
            family = "Amornbunchornvej",
@@ -18,4 +18,4 @@ Encoding: UTF-8
 LazyData: true
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.0.2
+RoxygenNote: 7.3.2

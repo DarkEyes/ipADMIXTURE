@@ -1,3 +1,6 @@
+# ipADMIXTURE v0.1.2
+* Updated the citation format
+
 # ipADMIXTURE v0.1.1
 * Add getPhyloTree new output 'minDiffAncestorMat'
 
